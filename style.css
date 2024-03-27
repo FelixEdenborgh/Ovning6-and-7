@@ -1,4 +1,78 @@
+
+h1 {
+    text-align: center; /* Centrerar titeln horisontellt */
+    color: #9370DB; /* Sätter färgen på titeln till medium lila */
+}
+
+.main-title {
+    text-align: center;
+    color: #9370DB;
+}
+
+
+
 .container{
 	width: 420px;
 	height: 315px;
+	margin: 0 auto;
+}
+
+.infoContainer{
+	margin: 20px auto 0;
+	width: 80%;
+	max-width: 1200px;
+	color: #9370DB; /* Medium lila */
+}
+
+
+
+
+
+.horizontal-menu {
+    display: flex;
+    justify-content: center; /* Centrerar listelementen horisontellt */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal-menu li {
+    float: left; /* Placerar listelementen bredvid varandra */
+}
+
+.horizontal-menu li a {
+    display: block; /* Gör länkarna blockelement så att hela området är klickbart */
+    text-align: center; /* Centrerar texten i länkarna */
+    padding: 14px 16px; /* Lägger till lite utrymme runt texten */
+    text-decoration: none; /* Tar bort understrykningen från länkarna */
+	color: #add8e6; /* Ljusblå */
+}
+
+/* Extra: Ändrar färg på länkarna vid hover */
+.horizontal-menu li a:hover {
+    background-color: #ddd;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+	margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Använd viewport-höjd istället för procent */
+    background-color: #003366; /* En djup, mörkblå nyans */
+}
+
+.content-wrap {
+    flex: 1;
+}
+
+footer {
+    height: 50px;
+    background-color: #9370DB;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 50px;
 }
